@@ -26,7 +26,10 @@ class MainActivity : AppCompatActivity() {
         // the onChanged method takes the new value of the mutable live data as a parameter
         // the onChanged method is called on the main thread
 
-        viewModel.count.observe(this, Observer {
+
+       // counter.text = viewModel.count.toString() // this is for the view model without mutable live data
+
+        viewModel.count.observe(this, Observer { // this is for the view model with mutable live data
             // "it" is the new value of the mutable live data
             counter.text = it.toString()
         })
