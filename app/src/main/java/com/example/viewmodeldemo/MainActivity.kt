@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
         //counter.text = count.toString()
         // counter.text = viewModel.count.toString()
 
-        // this is how we observe the mutable live data
+
         // we need to pass an observer to the mutable live data
         // the observer is an interface that has a method called onChanged
         // this method is called when the value of the mutable live data changes

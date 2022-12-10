@@ -9,8 +9,8 @@ class MainActivityViewModel: ViewModel() {
 
     // mutable live data is a live data that can be changed
     var count = MutableLiveData<Int>() // this is for the view model with mutable live data
-    // we need to initialize the mutable live data
 
+    // we need to initialize the mutable live data
     init {
         count.value = 0
     }
