@@ -12,6 +12,9 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        // provider is a factory that creates view models
+        // we need to pass the view model class and the view model factory
         viewModel = ViewModelProvider(this).get(MainActivityViewModel::class.java)
 
         val counter = findViewById<TextView>(R.id.tt)
